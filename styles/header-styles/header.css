@@ -1,0 +1,25 @@
+header {
+  width: 100vw;
+  height: auto;
+  padding: 0 40px;
+  background-color: #0b0c0f;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .login button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 900;
+  color: #a8afbd;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header nav .login button:hover {
+  background-color: #323843;
+  color: #ffffff;
+}/*# sourceMappingURL=header.css.map */

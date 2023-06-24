@@ -1,0 +1,39 @@
+// Variables
+$backgroundImagePath: "../../images";
+$blackColor: #0b0c0f;
+$greenColor: #1ce783;
+$whiteColor: #ffffff;
+$lightColor: #a8afbd;
+$buttonBackground: #323843;
+
+// HEADER SECTION START
+header {
+    width: 100vw;
+    height: auto;
+    padding: 0 40px;
+    background-color: $blackColor;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .login {
+            button {
+                background-color: transparent;
+                border: none;
+                font-size: 14px;
+                font-weight: 900;
+                color: $lightColor;
+                padding: 12px 15px;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $buttonBackground;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
