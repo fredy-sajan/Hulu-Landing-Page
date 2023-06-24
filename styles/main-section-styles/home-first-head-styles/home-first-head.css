@@ -1,0 +1,142 @@
+main {
+  width: 100vw;
+  height: 100vw;
+}
+main #homeFirstHead {
+  width: inherit;
+  height: auto;
+  padding: 160px 0;
+  background: rgb(59, 224, 211) url(../../../images//hulubackground.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main #homeFirstHead .transparent_black_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #0b0c0f;
+  opacity: 0.8;
+}
+main #homeFirstHead .plans-indicators {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-column-gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_preheadline {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 900;
+  color: #00ED82;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_headline {
+  width: 50%;
+  margin: 15px auto;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_headline img {
+  width: 100%;
+  height: 100%;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_subheadline {
+  max-width: 200px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
+  line-height: 1.2;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_input {
+  width: 100%;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_input button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #00ED82;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main #homeFirstHead .plans-indicators .duo-basic .Masthead_input button:hover {
+  opacity: 0.6;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_preheadline {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 900;
+  color: #00ED82;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_headline {
+  width: 64%;
+  margin: 15px auto;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_headline img {
+  width: 100%;
+  height: 100%;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_subheadline {
+  max-width: 200px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
+  line-height: 1.2;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_input {
+  width: 100%;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_input button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #00ED82;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main #homeFirstHead .plans-indicators .trio-basic .Masthead_input button:hover {
+  opacity: 0.6;
+}
+main #homeFirstHead .terms_apply {
+  position: absolute;
+  color: #fff;
+  bottom: 130px;
+  font-size: small;
+  text-decoration: underline;
+  cursor: pointer;
+}
+main #homeFirstHead .sign_up_hulu {
+  position: absolute;
+  bottom: 80px;
+  color: #fff;
+  font-size: small;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  main #homeFirstHead .plans-indicators {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 599px) {
+  main #homeFirstHead .plans-indicators .trio-basic {
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=home-first-head.css.map */

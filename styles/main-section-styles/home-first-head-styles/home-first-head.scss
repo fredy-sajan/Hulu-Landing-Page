@@ -1,0 +1,194 @@
+// Variables
+$blackColor: #0b0c0f;
+$greenColor: #00ED82;
+$whiteColor: #fff;
+$lightColor: #a8afbd;
+$buttonBackground: #323843;
+
+
+// Image variables
+$backgroundImagePath: "../../../images/";
+
+main {
+    width: 100vw;
+    height: 100vw;
+
+    #homeFirstHead {
+        width: inherit;
+        height: auto;
+        padding: 160px 0;
+        background: rgb(59, 224, 211) url(#{$backgroundImagePath}/hulubackground.jpg) no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .transparent_black_background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: #0b0c0f;
+            opacity: 0.8;
+        }
+
+        // plans indicators elements start
+        .plans-indicators {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-column-gap: 15px;
+            position: relative;
+            z-index: 2;
+
+            // duo basic element style start
+            .duo-basic {
+                .Masthead_preheadline {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    text-align: center;
+                    font-weight: 900;
+                    color: $greenColor;
+                }
+
+                .Masthead_headline {
+                    width: 50%;
+                    margin: 15px auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .Masthead_subheadline {
+                    max-width: 200px;
+                    font-size: 19px;
+                    color: $whiteColor;
+                    font-weight: bolder;
+                    margin: auto;
+                    text-align: center;
+                    line-height: 1.2;
+                }
+
+                .Masthead_input {
+                    width: 100%;
+
+                    button {
+                        width: 100%;
+                        padding: 15px;
+                        border: none;
+                        background-color: $greenColor;
+                        text-transform: uppercase;
+                        margin: 15px 0;
+                        font-weight: bolder;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+            // duo basic element style end
+
+            // trio basic element style start
+            .trio-basic {
+                .Masthead_preheadline {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    text-align: center;
+                    font-weight: 900;
+                    color: $greenColor;
+                }
+
+                .Masthead_headline {
+                    width: 64%;
+                    margin: 15px auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .Masthead_subheadline {
+                    max-width: 200px;
+                    font-size: 19px;
+                    color: $whiteColor;
+                    font-weight: bolder;
+                    margin: auto;
+                    text-align: center;
+                    line-height: 1.2;
+                }
+
+                .Masthead_input {
+                    width: 100%;
+
+                    button {
+                        width: 100%;
+                        padding: 15px;
+                        border: none;
+                        background-color: $greenColor;
+                        text-transform: uppercase;
+                        margin: 15px 0;
+                        font-weight: bolder;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+            // trio basic element style start
+        }
+        // plans indicators elements end
+
+        .terms_apply{
+            position: absolute;
+            color: $whiteColor;
+            bottom: 130px;
+            font-size: small;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .sign_up_hulu{
+            position: absolute;
+            bottom: 80px;
+            color: $whiteColor;
+            font-size: small;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+// Media queries
+@media only screen and (min-width: 600px) {
+    main {
+        #homeFirstHead {
+            .plans-indicators {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    main {
+        #homeFirstHead {
+            .plans-indicators {
+                .trio-basic {
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+}

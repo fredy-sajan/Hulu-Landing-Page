@@ -1,5 +1,4 @@
 // Variables
-$backgroundImagePath: "../../images";
 $blackColor: #0b0c0f;
 $greenColor: #1ce783;
 $whiteColor: #ffffff;
@@ -11,7 +10,9 @@ header {
     width: 100vw;
     height: auto;
     padding: 0 40px;
-    background-color: $blackColor;
+    position: absolute;
+    top: 0;
+    z-index: 20;
 
     nav {
         display: flex;

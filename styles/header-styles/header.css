@@ -2,7 +2,9 @@ header {
   width: 100vw;
   height: auto;
   padding: 0 40px;
-  background-color: #0b0c0f;
+  position: absolute;
+  top: 0;
+  z-index: 20;
 }
 header nav {
   display: flex;
