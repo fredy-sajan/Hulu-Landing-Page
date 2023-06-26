@@ -1,6 +1,6 @@
 main {
   width: 100vw;
-  height: 100vw;
+  height: 100%;
 }
 main #homeFirstHead {
   width: inherit;
@@ -49,7 +49,7 @@ main #homeFirstHead .plans-indicators .duo-basic .Masthead_headline img {
 main #homeFirstHead .plans-indicators .duo-basic .Masthead_subheadline {
   max-width: 200px;
   font-size: 19px;
-  color: #fff;
+  color: #e8eaed;
   font-weight: bolder;
   margin: auto;
   text-align: center;
@@ -90,7 +90,7 @@ main #homeFirstHead .plans-indicators .trio-basic .Masthead_headline img {
 main #homeFirstHead .plans-indicators .trio-basic .Masthead_subheadline {
   max-width: 200px;
   font-size: 19px;
-  color: #fff;
+  color: #e8eaed;
   font-weight: bolder;
   margin: auto;
   text-align: center;
@@ -115,7 +115,7 @@ main #homeFirstHead .plans-indicators .trio-basic .Masthead_input button:hover {
 }
 main #homeFirstHead .terms_apply {
   position: absolute;
-  color: #fff;
+  color: #e8eaed;
   bottom: 130px;
   font-size: small;
   text-decoration: underline;
@@ -124,7 +124,7 @@ main #homeFirstHead .terms_apply {
 main #homeFirstHead .sign_up_hulu {
   position: absolute;
   bottom: 80px;
-  color: #fff;
+  color: #e8eaed;
   font-size: small;
   text-decoration: underline;
   cursor: pointer;

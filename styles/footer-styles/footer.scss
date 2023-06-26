@@ -1,0 +1,80 @@
+// color Variables
+$blackColor: #0b0c0f;
+$greenColor: #00ed82;
+$whiteColor: #e8eaed;
+$lightColor: #a8afbd;
+$buttonBackground: #323843;
+
+main {
+    #footer {
+        background-color: $whiteColor;
+        padding: 60px 0;
+
+        .footerSection {
+            .first_head {
+                display: flex;
+                flex-direction: column;
+
+                padding: 0 20px;
+            }
+
+            .sociallinks {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10px;
+
+                .sociallinks_text {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: rgb(143, 143, 143);
+                    cursor: pointer;
+
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .second_head {
+                .otherlinks {
+                    padding: 10px 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 1;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+// single
+.footer_head_text {
+    border-bottom: 1px solid $lightColor;
+    margin-bottom: 10px;
+    padding: 40px;
+    cursor: pointer;
+}
+.footer_head_text_content {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $blackColor;
+}
+
+.otherlinks_box{
+    padding: 10px;
+
+    &:not(:last-child){
+        margin-right: 12px;
+    }
+}
+
+.otherlinks_box_text{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+main #footer {
+  background-color: #e8eaed;
+  padding: 60px 0;
+}
+main #footer .footerSection .first_head {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+main #footer .footerSection .sociallinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+main #footer .footerSection .sociallinks .sociallinks_text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+}
+main #footer .footerSection .sociallinks .sociallinks_text:not(:last-child) {
+  margin-right: 20px;
+}
+main #footer .footerSection .second_head .otherlinks {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_head_text {
+  border-bottom: 1px solid #a8afbd;
+  margin-bottom: 10px;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.footer_head_text_content {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0b0c0f;
+}
+
+.otherlinks_box {
+  padding: 10px;
+}
+.otherlinks_box:not(:last-child) {
+  margin-right: 12px;
+}
+
+.otherlinks_box_text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+}/*# sourceMappingURL=footer.css.map */

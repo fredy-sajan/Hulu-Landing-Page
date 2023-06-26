@@ -5,3 +5,8 @@
     box-sizing: border-box;
     font-family:  sans-serif, Arial, Helvetica;
 }
+
+/* Setting scrool behavior smooth */
+html{
+    scroll-behavior: smooth
+}

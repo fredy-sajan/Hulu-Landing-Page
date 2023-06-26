@@ -20,13 +20,13 @@ main #homeSecondHead .top_trending_movies .text_contents .preheadline {
   font-weight: 800;
 }
 main #homeSecondHead .top_trending_movies .text_contents .headline {
-  color: #fff;
+  color: #e8eaed;
   font-weight: 900;
   font-size: 40px;
   margin: 10px 0;
 }
 main #homeSecondHead .top_trending_movies .text_contents .paragraph {
-  color: #fff;
+  color: #e8eaed;
   font-size: 15px;
   max-width: 500px;
   margin: auto;
@@ -67,7 +67,7 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   height: 0;
   left: 10px;
   z-index: 4;
-  color: #fff;
+  color: #e8eaed;
   display: flex;
   flex-direction: column;
   justify-content: start;
