@@ -14,7 +14,7 @@ main {
         width: 100%;
         height: auto;
         background-color: $blackColor;
-        padding: 50px 0;
+        padding: 100px 0;
 
         .top_trending_movies {
             display: flex;
@@ -35,7 +35,7 @@ main {
                 .headline {
                     color: $whiteColor;
                     font-weight: 900;
-                    font-size: 30px;
+                    font-size: 40px;
                     margin: 10px 0;
                 }
 
@@ -58,9 +58,11 @@ main {
         }
     }
 }
+// ------------------
 // Nested class end
 // ------------------
 
+// -------------------
 // Single styles start
 // -------------------
 
@@ -130,17 +132,18 @@ main {
     main {
         #homeSecondHead {
             .top_trending_movies {
+                padding: 0 100px;
+
                 .text_contents {
-                    
                     .preheadline {
                         font-size: 13px;
                     }
 
                     .headline {
-                        font-size: 40px;
+                        font-size: 50px;
                         margin-top: 20px;
                     }
-                    
+
                     .paragraph {
                         max-width: 610px;
                         font-size: 16px;
@@ -149,10 +152,9 @@ main {
                 }
 
                 .top_four_movie {
-                    max-width: 1100px;
+                    max-width: 1300px;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                     column-gap: 35px;
-                    padding: 0 20px;
 
                     .movie_box {
                         transition: all 0.2s ease-in-out;
@@ -191,18 +193,22 @@ main {
     main {
         #homeSecondHead {
             .top_trending_movies {
-
-                .text_contents{
-                    .headline{
-                        margin-top: 10px;
+                .text_contents {
+                    .preheadline{
+                        font-size: 10px;
                     }
-                    .paragraph{
+                    .headline {
+                        margin-top: 10px;
+                        font-size: 40px;
+                    }
+                    .paragraph {
                         margin: 20px 0;
+                        font-size: 14px;
                     }
                 }
 
                 .top_four_movie {
-                    grid-template-columns: 300px 300px;
+                    grid-template-columns: 290px 290px;
                     column-gap: 35px;
                     row-gap: 35px;
                     padding: 0 20px;

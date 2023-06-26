@@ -12,9 +12,16 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="./styles/global.css">
-    <link rel="stylesheet" type="text/css" href="./styles/header-styles/header.css">
-    <link rel="stylesheet" href="./styles/main-section-styles/home-first-head-styles/home-first-head.css">
-    <link rel="stylesheet" href="./styles/main-section-styles/home-second-head-styles/home-second-header.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="./styles/header-styles/header.css">
+    <link rel="stylesheet" type="text/css"
+        href="./styles/main-section-styles/home-first-head-styles/home-first-head.css">
+    <link rel="stylesheet" type="text/css"
+        href="./styles/main-section-styles/home-second-head-styles/home-second-header.css">
+    <link rel="stylesheet" type="text/css"
+        href="./styles/main-section-styles/home-third-head-styles/home-third-header.css">
+
+    <!-- Font Awesome Icon link -->
+    <script src="https://kit.fontawesome.com/40dd0b6012.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -184,9 +191,217 @@
             </div>
 
         </section>
-        <!-- Main sescond head section end -->
+        <!-- Main second head section end -->
 
-        
+
+        <!-- Main third  head section start -->
+        <section id="homeThirdHead">
+
+            <div class="live_tv_info">
+                <div class="pre_headline">
+                    Hulu + Live Tv, Now With Disney+ And ESPN+, All With Ads
+                </div>
+                <div class="headline">
+                    <h2>Live Tv Makes It Better</h2>
+                </div>
+                <div class="sub_headline">
+                    <h3>Make the switch from cable. Get 90+ top channels on Hulu (With Ads) + Live TV with your favorite
+                        live sports, news, and events - plus the entire Hulu streaming library. With Unlimited DVR,
+                        store Live TV recordings for up to nine months and fast-forward through your DVR content. Access
+                        endless entertainment with Disney+ and live sports with ESPN+.
+                    </h3>
+                </div>
+                <div class="sub_paragraph">
+                    <p>Regional restrictions, blackouts and Live TV terms apply. Access content from each service
+                        separately. Location data required to watch certain content. Unlimited DVR recording is not
+                        available for on-demand shows.
+                    </p>
+                </div>
+                <dvi class="channel_list_btn">
+                    <button>View Channels In Your Area</button>
+                </dvi>
+                <div class="scrollable_arrow_icon" title="Go Down">
+                    <a href="#extraLIveTvInfo" style="color: white;"><i class="fa-solid fa-angle-down"></i></a>
+                </div>
+            </div>
+
+            <div id="extraLIveTvInfo" class="extra_live_tv_info">
+
+                <div class="tab_buttons">
+                    <div class="btn_one">
+                        <button id="liveSports_button" class="text_active_color">Live Sports</button>
+                    </div>
+                    <div class="btn_two">
+                        <button id="breakingNews_button" class="">Breaking News</button>
+                    </div>
+                    <div class="btn_three">
+                        <button id="biggestEvents_button" class="">Biggest Events</button>
+                    </div>
+                </div>
+
+                <!-- live sports start -->
+                <div id="liveSports" class="common_styles">
+
+                    <div class="item-gradient"></div>
+
+                    <picture class="tab_image">
+                        <source class="tab_image_one tab_img" media="(max-width: 1000px)"
+                            srcset="./images/liveInfoImageOneMobileScreen.jpeg">
+                        <img class="tab_image_two tab_img" src="./images/liveInfoImageOne.jpeg" alt="live_info_pic">
+                    </picture>
+
+                    <div class="tab_contents">
+
+                        <div class="tab_headline">
+                            <span class="tab_headline_text">Live Sports</span>
+                        </div>
+
+                        <div class="tab_subheadline">
+                            <span class="tab_subheadline_text">Catch your games at home or on the go. Stream live games
+                                from major college and pro
+                                leagues including the NCAA®, NBA, NHL, NFL, and more.
+                            </span>
+                        </div>
+
+                        <div class="tab_logo_row tab_logo_row_first_container">
+                            <div class="one tab_logo_row_second_container">
+                                <img class="tab_logo_row_first_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoOne.png" alt="channel-logos">
+                            </div>
+                            <div class="two tab_logo_row_second_container">
+                                <img class="tab_logo_row_second_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoTwo.png" alt="channel-logos">
+                            </div>
+                            <div class="three tab_logo_row_second_container">
+                                <img class="tab_logo_row_third_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoThree.png" alt="channel-logos">
+                            </div>
+                            <div class="four tab_logo_row_second_container">
+                                <img class="tab_logo_row_fourth_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoFour.png" alt="channel-logos">
+                            </div>
+                        </div>
+
+                        <div class="tab_disclaimer">
+                            <p class="tab_disclaimer_text">
+                                Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                                <span style="text-decoration: underline; cursor: pointer;"> See details </span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- live sports end-->
+
+                <!-- breaking news start -->
+                <div id="breakingNews" class="common_styles" style="display: none;">
+                    <div class="item-gradient"></div>
+
+                    <picture class="tab_image">
+                        <source class="tab_image_one tab_img" media="(max-width: 1000px)"
+                            srcset="./images/liveInfoImageOneMobileScreen.jpeg">
+                        <img class="tab_image_two tab_img" src="./images/liveInfoImageTwo.jpeg" alt="live_info_pic">
+                    </picture>
+
+                    <div class="tab_contents">
+
+                        <div class="tab_headline">
+                            <span class="tab_headline_text">Breaking News</span>
+                        </div>
+
+                        <div class="tab_subheadline">
+                            <span class="tab_subheadline_text">Keep pace with what's going on locally and globally with
+                                trusted opinions from all the top news networks.
+                            </span>
+                        </div>
+
+                        <div class="tab_logo_row tab_logo_row_first_container">
+                            <div class="one tab_logo_row_second_container">
+                                <img class="tab_logo_row_first_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoOne.png" alt="channel-logos">
+                            </div>
+                            <div class="two tab_logo_row_second_container">
+                                <img class="tab_logo_row_second_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoTwo.png" alt="channel-logos">
+                            </div>
+                            <div class="three tab_logo_row_second_container">
+                                <img class="tab_logo_row_third_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoThree.png" alt="channel-logos">
+                            </div>
+                            <div class="four tab_logo_row_second_container">
+                                <img class="tab_logo_row_fourth_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoFour.png" alt="channel-logos">
+                            </div>
+                        </div>
+
+                        <div class="tab_disclaimer">
+                            <p class="tab_disclaimer_text" style="z-index: 0;">
+                                Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                                See details
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- breaking news end -->
+
+                <!-- biggest events start -->
+                <div id="biggestEvents" class="common_styles" style="display: none;">
+                    <div class="item-gradient"></div>
+
+                    <picture class="tab_image">
+                        <source class="tab_image_one tab_img" media="(max-width: 1000px)"
+                            srcset="./images/liveImageThreeMobileScreenl.jpeg">
+                        <img class="tab_image_two tab_img" src="./images/liveInfoImageThree.jpeg" alt="live_info_pic">
+                    </picture>
+
+                    <div class="tab_contents">
+
+                        <div class="tab_headline">
+                            <span class="tab_headline_text">Live Sports</span>
+                        </div>
+
+                        <div class="tab_subheadline">
+                            <span class="tab_subheadline_text">Catch your games at home or on the go. Stream live games
+                                from major college and pro
+                                leagues including the NCAA®, NBA, NHL, NFL, and more.
+                            </span>
+                        </div>
+
+                        <div class="tab_logo_row tab_logo_row_first_container">
+                            <div class="one tab_logo_row_second_container">
+                                <img class="tab_logo_row_first_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoOne.png" alt="channel-logos">
+                            </div>
+                            <div class="two tab_logo_row_second_container">
+                                <img class="tab_logo_row_second_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoTwo.png" alt="channel-logos">
+                            </div>
+                            <div class="three tab_logo_row_second_container">
+                                <img class="tab_logo_row_third_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoThree.png" alt="channel-logos">
+                            </div>
+                            <div class="four tab_logo_row_second_container">
+                                <img class="tab_logo_row_fourth_image tab_logo_row_image"
+                                    src="./images/live-tv-section/oneLogoFour.png" alt="channel-logos">
+                            </div>
+                        </div>
+
+                        <div class="tab_disclaimer">
+                            <p class="tab_disclaimer_text">
+                                Live TV plan required. Regional restrictions, blackouts and additional terms apply.
+                                <span style="text-decoration: underline; cursor: pointer;"> See details </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- biggest events start -->
+
+            </div>
+        </section>
+        <!-- Main third  head section end -->
 
     </main>
     <!-- main section end -->

@@ -2,7 +2,7 @@ main #homeSecondHead {
   width: 100%;
   height: auto;
   background-color: #0b0c0f;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 main #homeSecondHead .top_trending_movies {
   display: flex;
@@ -22,7 +22,7 @@ main #homeSecondHead .top_trending_movies .text_contents .preheadline {
 main #homeSecondHead .top_trending_movies .text_contents .headline {
   color: #fff;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px 0;
 }
 main #homeSecondHead .top_trending_movies .text_contents .paragraph {
@@ -87,11 +87,14 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
 }
 
 @media only screen and (min-width: 1000px) {
+  main #homeSecondHead .top_trending_movies {
+    padding: 0 100px;
+  }
   main #homeSecondHead .top_trending_movies .text_contents .preheadline {
     font-size: 13px;
   }
   main #homeSecondHead .top_trending_movies .text_contents .headline {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 20px;
   }
   main #homeSecondHead .top_trending_movies .text_contents .paragraph {
@@ -100,11 +103,10 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
     margin: 20px 0;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie {
-    max-width: 1100px;
+    max-width: 1300px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -moz-column-gap: 35px;
          column-gap: 35px;
-    padding: 0 20px;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie .movie_box {
     transition: all 0.2s ease-in-out;
@@ -126,14 +128,19 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 999px) {
+  main #homeSecondHead .top_trending_movies .text_contents .preheadline {
+    font-size: 10px;
+  }
   main #homeSecondHead .top_trending_movies .text_contents .headline {
     margin-top: 10px;
+    font-size: 40px;
   }
   main #homeSecondHead .top_trending_movies .text_contents .paragraph {
     margin: 20px 0;
+    font-size: 14px;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie {
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 290px 290px;
     -moz-column-gap: 35px;
          column-gap: 35px;
     row-gap: 35px;

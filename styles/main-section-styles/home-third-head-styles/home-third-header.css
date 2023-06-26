@@ -1,0 +1,298 @@
+main #homeThirdHead {
+  width: 100%;
+  height: auto;
+  background-color: #0b0c0f;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+main #homeThirdHead .live_tv_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+main #homeThirdHead .live_tv_info .pre_headline {
+  text-transform: uppercase;
+  color: #00ed82;
+  font-size: 10px;
+  font-weight: 800;
+  text-align: center;
+}
+main #homeThirdHead .live_tv_info .headline h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 10px 0;
+  text-align: center;
+}
+main #homeThirdHead .live_tv_info .sub_headline h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+  max-width: 620px;
+  margin: auto;
+  line-height: 1.5;
+  text-align: center;
+}
+main #homeThirdHead .live_tv_info .sub_paragraph p {
+  color: #a8afbd;
+  font-size: 10px;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.5;
+  text-align: center;
+}
+main #homeThirdHead .live_tv_info .channel_list_btn button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #a8afbd;
+  cursor: pointer;
+  text-align: center;
+}
+main #homeThirdHead .live_tv_info .scrollable_arrow_icon {
+  margin-top: 70px;
+  cursor: pointer;
+}
+main #homeThirdHead .live_tv_info .scrollable_arrow_icon i {
+  font-size: 20px;
+  animation: upDown 1s ease infinite alternate;
+}
+main #homeThirdHead .extra_live_tv_info {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 50px;
+}
+main #homeThirdHead .extra_live_tv_info .tab_buttons {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 0 15px;
+}
+main #homeThirdHead .extra_live_tv_info .tab_buttons button {
+  border: none;
+  background-color: transparent;
+  color: #a8afbd;
+  padding: 10px 0;
+  margin: 0 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.common_styles {
+  position: relative;
+}
+
+.extra_live_tv_info .tab_buttons #liveSports_button.text_active_color {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.extra_live_tv_info .tab_buttons #breakingNews_button.text_active_color {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.extra_live_tv_info .tab_buttons #biggestEvents_button.text_active_color {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+#liveSports {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.tab_image {
+  width: 100%;
+  height: 810px;
+}
+
+.tab_img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tab_contents {
+  position: absolute;
+  top: 180px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab_headline {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tab_headline_text {
+  color: #fff;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.tab_subheadline {
+  max-width: 360px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tab_subheadline_text {
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tab_logo_row {
+  height: auto;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tab_logo_row_second_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+}
+
+.tab_logo_row_image {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tab_disclaimer {
+  max-width: 500px;
+  text-align: center;
+}
+
+.tab_disclaimer_text {
+  font-size: 13px;
+  font-weight: 900;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main #homeThirdHead {
+    padding: 100px 0;
+  }
+  main #homeThirdHead .live_tv_info .pre_headline {
+    font-size: 13px;
+  }
+  main #homeThirdHead .live_tv_info .headline {
+    margin: 6px 0;
+  }
+  main #homeThirdHead .live_tv_info .headline h2 {
+    font-size: 50px;
+  }
+  main #homeThirdHead .live_tv_info .sub_headline h3 {
+    font-size: 18px;
+    margin: 0 0 13px;
+    max-width: 750px;
+  }
+  main #homeThirdHead .extra_live_tv_info {
+    margin-top: 150px;
+  }
+  main #homeThirdHead .extra_live_tv_info .tab_buttons {
+    top: 140px;
+    left: -430px;
+  }
+  .tab_contents {
+    top: 180px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: normal;
+    max-width: 700px;
+    margin: auto;
+  }
+  .tab_headline {
+    text-align: start;
+    margin-bottom: 10px;
+    margin-left: -300px;
+    margin-top: 78px;
+  }
+  .tab_headline_text {
+    font-size: 45px;
+  }
+  .tab_subheadline {
+    text-align: start;
+    max-width: 550px;
+    margin-left: -300px;
+  }
+  .tab_logo_row {
+    max-width: 300px;
+    margin-left: -300px;
+    margin-top: 15px;
+  }
+  .tab_logo_row_second_container {
+    margin: 13px 0;
+  }
+  .tab_disclaimer {
+    max-width: 600px;
+    text-align: start;
+    margin-left: -300px;
+    margin-top: 0px;
+  }
+  .tab_disclaimer_text {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  main #homeThirdHead .live_tv_info .pre_headline {
+    font-size: 10px;
+  }
+  main #homeThirdHead .live_tv_info .headline {
+    margin: 6px 0;
+  }
+  main #homeThirdHead .live_tv_info .headline h2 {
+    font-size: 40px;
+  }
+  main #homeThirdHead .live_tv_info .sub_headline h3 {
+    font-size: 15px;
+    margin: 0 0 13px;
+    max-width: 750px;
+  }
+}/*# sourceMappingURL=home-third-header.css.map */
