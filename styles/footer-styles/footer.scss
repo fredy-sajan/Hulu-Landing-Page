@@ -5,53 +5,60 @@ $whiteColor: #e8eaed;
 $lightColor: #a8afbd;
 $buttonBackground: #323843;
 
-main {
-    #footer {
-        background-color: $whiteColor;
-        padding: 60px 0;
+// ------------------
+// Nested style start
+// ------------------
+footer {
+    background-color: $whiteColor;
+    padding: 60px 0;
 
-        .footerSection {
-            .first_head {
-                display: flex;
-                flex-direction: column;
+    .footerSection {
+        .first_head {
+            display: flex;
+            flex-direction: column;
 
-                padding: 0 20px;
+            padding: 0 20px;
+        }
+
+        .sociallinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+
+            .sociallinks_text {
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(143, 143, 143);
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
             }
+        }
 
-            .sociallinks {
+        .second_head {
+            .otherlinks {
+                padding: 10px 20px;
                 display: flex;
+                flex-wrap: wrap;
+                flex: 1;
                 justify-content: center;
                 align-items: center;
-                padding: 20px 10px;
-
-                .sociallinks_text {
-                    font-size: 15px;
-                    font-weight: 700;
-                    color: rgb(143, 143, 143);
-                    cursor: pointer;
-
-                    &:not(:last-child) {
-                        margin-right: 20px;
-                    }
-                }
-            }
-
-            .second_head {
-                .otherlinks {
-                    padding: 10px 20px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex: 1;
-                    justify-content: center;
-                    align-items: center;
-                }
             }
         }
     }
 }
 
+// ----------------
+// Nested style end
+// ----------------
 
-// single
+// ------------------
+// Single style start
+// ------------------
+
 .footer_head_text {
     border-bottom: 1px solid $lightColor;
     margin-bottom: 10px;
@@ -64,17 +71,21 @@ main {
     color: $blackColor;
 }
 
-.otherlinks_box{
+.otherlinks_box {
     padding: 10px;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: 12px;
     }
 }
 
-.otherlinks_box_text{
+.otherlinks_box_text {
     font-size: 15px;
     font-weight: 700;
     color: rgb(143, 143, 143);
     cursor: pointer;
 }
+
+// ----------------
+// Single style end
+// ----------------
