@@ -1,3 +1,4 @@
+
 main {
   width: 100vw;
   height: 100%;
@@ -8,10 +9,19 @@ main #homeFirstHead {
   padding: 160px 0;
   background: rgb(59, 224, 211) url(../../../images//hulubackground.jpg) no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 main #homeFirstHead .transparent_black_background {
@@ -26,6 +36,7 @@ main #homeFirstHead .plans-indicators {
   width: 100%;
   height: auto;
   margin: auto;
+  display: -ms-grid;
   display: grid;
   grid-column-gap: 15px;
   position: relative;
@@ -132,13 +143,28 @@ main #homeFirstHead .sign_up_hulu {
 
 @media only screen and (min-width: 600px) {
   main #homeFirstHead .plans-indicators {
+    -ms-grid-columns: 1fr 80px 1fr;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 80px;
-         column-gap: 80px;
+         -webkit-column-gap: 80px;
+            column-gap: 80px;
   }
 }
 @media only screen and (max-width: 599px) {
   main #homeFirstHead .plans-indicators .trio-basic {
     margin-top: 80px;
   }
-}/*# sourceMappingURL=home-first-head.css.map */
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

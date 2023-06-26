@@ -1,3 +1,4 @@
+
 main #homeSecondHead {
   width: 100%;
   height: auto;
@@ -5,10 +6,19 @@ main #homeSecondHead {
   padding: 100px 0;
 }
 main #homeSecondHead .top_trending_movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main #homeSecondHead .top_trending_movies .text_contents {
   text-align: center;
@@ -33,7 +43,9 @@ main #homeSecondHead .top_trending_movies .text_contents .paragraph {
   line-height: 1.5;
 }
 main #homeSecondHead .top_trending_movies .top_four_movie {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 200px;
   grid-template-columns: 200px;
   max-width: 986px;
   margin: 35px auto;
@@ -58,6 +70,7 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   bottom: 0;
   left: 0;
   z-index: 3;
+  background: -o-linear-gradient(293.18deg, rgba(0, 0, 0, 0.6) 4.58%, transparent 69.61%), -o-linear-gradient(65.5deg, rgba(0, 0, 0, 0.2) 4.71%, transparent 71.49%);
   background: linear-gradient(156.82deg, rgba(0, 0, 0, 0.6) 4.58%, transparent 69.61%), linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, transparent 71.49%);
 }
 
@@ -68,10 +81,19 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   left: 10px;
   z-index: 4;
   color: #e8eaed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .item_overlay_span {
@@ -104,16 +126,23 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   }
   main #homeSecondHead .top_trending_movies .top_four_movie {
     max-width: 1300px;
+    -ms-grid-columns: 1fr 35px 1fr 35px 1fr 35px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -moz-column-gap: 35px;
-         column-gap: 35px;
+         -webkit-column-gap: 35px;
+            column-gap: 35px;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie .movie_box {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie .movie_box:hover {
-    transform: scale(1.1);
-    animation: th forwards 2s;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: th forwards 2s;
+            animation: th forwards 2s;
   }
   .item_overlay {
     top: 10px;
@@ -140,18 +169,25 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
     font-size: 14px;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie {
+    -ms-grid-columns: 290px 35px 290px;
     grid-template-columns: 290px 290px;
     -moz-column-gap: 35px;
-         column-gap: 35px;
+         -webkit-column-gap: 35px;
+            column-gap: 35px;
     row-gap: 35px;
     padding: 0 20px;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie .movie_box {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   main #homeSecondHead .top_trending_movies .top_four_movie .movie_box:hover {
-    transform: scale(1.1);
-    animation: th forwards 2s;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: th forwards 2s;
+            animation: th forwards 2s;
   }
   .item_overlay {
     top: 10px;
@@ -163,4 +199,4 @@ main #homeSecondHead .top_trending_movies .top_four_movie {
   .item_overlay_h3 {
     font-size: 22px;
   }
-}/*# sourceMappingURL=home-second-header.css.map */
+}

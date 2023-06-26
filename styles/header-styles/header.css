@@ -1,3 +1,4 @@
+
 header {
   width: 100vw;
   height: auto;
@@ -7,9 +8,15 @@ header {
   z-index: 20;
 }
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header nav .login button {
   background-color: transparent;
@@ -24,4 +31,4 @@ header nav .login button {
 header nav .login button:hover {
   background-color: #323843;
   color: #ffffff;
-}/*# sourceMappingURL=header.css.map */
+}

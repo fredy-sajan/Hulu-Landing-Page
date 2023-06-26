@@ -1,3 +1,4 @@
+
 main #homeThirdHead {
   width: 100%;
   height: auto;
@@ -6,10 +7,19 @@ main #homeThirdHead {
   overflow: hidden;
 }
 main #homeThirdHead .live_tv_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #e8eaed;
 }
 main #homeThirdHead .live_tv_info .pre_headline {
@@ -62,7 +72,8 @@ main #homeThirdHead .live_tv_info .scrollable_arrow_icon {
 }
 main #homeThirdHead .live_tv_info .scrollable_arrow_icon i {
   font-size: 20px;
-  animation: upDown 1s ease infinite alternate;
+  -webkit-animation: upDown 1s ease infinite alternate;
+          animation: upDown 1s ease infinite alternate;
 }
 main #homeThirdHead .extra_live_tv_info {
   width: 100%;
@@ -73,10 +84,17 @@ main #homeThirdHead .extra_live_tv_info {
 main #homeThirdHead .extra_live_tv_info .tab_buttons {
   width: 100%;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: absolute;
   top: 40px;
   bottom: 0;
@@ -141,9 +159,16 @@ main #homeThirdHead .extra_live_tv_info .tab_buttons button {
   bottom: 0;
   left: 0;
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab_headline {
@@ -174,9 +199,14 @@ main #homeThirdHead .extra_live_tv_info .tab_buttons button {
 .tab_logo_row {
   height: auto;
   margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tab_logo_row_second_container {
@@ -206,12 +236,25 @@ main #homeThirdHead .extra_live_tv_info .tab_buttons button {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-@keyframes upDown {
+@-webkit-keyframes upDown {
   0% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -244,7 +287,9 @@ main #homeThirdHead .extra_live_tv_info .tab_buttons button {
     right: 0;
     bottom: 0;
     left: 0;
-    align-items: normal;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
     max-width: 700px;
     margin: auto;
   }
@@ -326,4 +371,4 @@ main #homeThirdHead .extra_live_tv_info .tab_buttons button {
     margin: 0 0 13px;
     max-width: 750px;
   }
-}/*# sourceMappingURL=home-third-header.css.map */
+}
